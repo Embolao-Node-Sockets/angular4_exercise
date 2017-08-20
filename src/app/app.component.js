@@ -6,39 +6,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var Hero = (function () {
-    function Hero() {
-    }
-    return Hero;
-}());
-exports.Hero = Hero;
-var HEROES = [
-    { id: 11, name: 'Mr Nice' },
-    { id: 12, name: 'Narco' },
-    { id: 13, name: 'Bombasto' },
-    { id: 14, name: 'Celeritas' },
-    { id: 15, name: 'Magneta' },
-    { id: 16, name: 'Rubberman' },
-    { id: 17, name: 'Dynama' },
-    { id: 18, name: 'Dr IQ' },
-    { id: 19, name: 'Magma' },
-    { id: 20, name: 'Tornado' },
-];
 var AppComponent = (function () {
     function AppComponent() {
-        this.title = 'Tour of heroes';
-        this.heroes = HEROES;
     }
-    AppComponent.prototype.onSelect = function (hero) {
-        this.selectedHero = hero;
-    };
     return AppComponent;
 }());
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        templateUrl: './component.html',
-        styleUrls: ['./component.style.css']
+        template: "\n  <app-header></app-header>\n  <div class=\"row\">\n  <app-left-navigation></app-left-navigation>\n  <app-right-content></app-right-content>\n  </div>\n  <app-footer></app-footer>\n ",
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;
